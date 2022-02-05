@@ -26,7 +26,7 @@ Product.belongsToMany(Tag, {
   },
   // Define an alias for when data is retrieved
   //call this whatever you link - related to how the data will be returned (which key)
-  as: "product_tags",
+  as: "products_tags",
 });
 
 // Tags belongToMany Products (through ProductTag)
