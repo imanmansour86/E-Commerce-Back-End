@@ -10,16 +10,8 @@ router.get("/", async (req, res) => {
   try {
     const allProducts = await Product.findAll({
       include: [
-        {
-          model: Category,
-        },
-      ],
-      include: [
-        {
-          model: Tag,
-          through: ProductTag,
-          as: "products_tags",
-        },
+        { model: Category },
+        { model: Tag, through: ProductTag, as: "products_tags" },
       ],
     });
 
