@@ -30,6 +30,8 @@ router.get("/", async (req, res) => {
 });
 
 // get one product
+// find a single product by its `id`
+// be sure to include its associated Category and Tag data
 router.get("/:id", async (req, res) => {
   try {
     const singleProduct = await Product.findByPk(req.params.id, {
@@ -55,8 +57,6 @@ router.get("/:id", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-  // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
 });
 
 // create new product
@@ -135,6 +135,21 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
+
+  try {
+    const product = Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!product) {
+      res.status(404).json({ message: "No category with that id was found" });
+      return;
+    }
+    res.status(200).json(category);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
