@@ -17,11 +17,9 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [GET routes](#get-routes)
-  - [POST routes](#post-routes)
-  - [PUT routes](#put-routes)
   - [Demo](#demo)
   - [Features](#features)
+  - [Tests](#tests)
   - [Built With](#built-with)
   - [Resources Used](#resources-used)
   - [Author](#author)
@@ -65,7 +63,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
 
 Below are some screenshots demonstrating testing the routes in Insomnia
 
-## GET routes
+GET routes
 
 - Categroy
 
@@ -79,7 +77,7 @@ Below are some screenshots demonstrating testing the routes in Insomnia
 
 ![Tag](./images/get_tag.png)
 
-## POST routes
+POST routes
 
 - Categroy
 
@@ -93,7 +91,7 @@ Below are some screenshots demonstrating testing the routes in Insomnia
 
 ![Tag](./images/post_tag.png)
 
-## PUT routes
+PUT routes
 
 - Categroy
 
@@ -114,6 +112,10 @@ Below are some screenshots demonstrating testing the routes in Insomnia
 ## Features
 
 The tables have association established in Sequelize models to create the following relationships: Product belongs to Category, and Category has many Product models. Product belongs to many Tag models, and Tag belongs to many Product models. Products can have multiple tags and tags to have many products by using a ProductTag model.
+
+## Tests
+
+To test the functionality of the routes, open Insomnia, specifiy the method in the request and enter the URL to be tested: Sincd the app uses app router, to GET routes for all the categories for example, enter URL http://localhost:3001/api/categories/ and hit send. The GET all products URL is http://localhost:3001/api/products, and GET all tags URL is http://localhost:3001/api/tags
 
 ## Built With
 
