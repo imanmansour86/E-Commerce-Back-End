@@ -8,7 +8,7 @@
 
 ## Description
 
-In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete from the database's tables. The database has the following tables: Category, Product, Tag and ProductTag as an association table. The routes were tested using Insomnia Core.
+In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can GET, PUT, POST and DELETE from the database's tables. The database has the following tables: Category, Product, Tag and ProductTag as an association table. The routes were tested using Insomnia Core.
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
   source schema.sql
   ```
 
-- From terminal: navigate the app's directoty and run:
+- From terminal: navigate to the app's directoty and run:
 
   ```md
   $ npm run seed
