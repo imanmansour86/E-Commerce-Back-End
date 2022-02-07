@@ -8,7 +8,7 @@
 
 ## Description
 
-In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete from the databases tables. The database has the following tables: Category, Product, Tag and Product tag as an association table. The routes were testing using Insomnia Core.
+In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete from the database's tables. The database has the following tables: Category, Product, Tag and ProductTag as an association table. The routes were tested using Insomnia Core.
 
 ## Table of Contents
 
@@ -112,6 +112,8 @@ Below are some screenshots demonstrating testing the routes in Insomnia
 - [Demo Link](https://watch.screencastify.com/v/3NqAKIiVMRTFfE7wytfF)
 
 ## Features
+
+The tables have association established in Sequelize models to create the following relationships: Product belongs to Category, and Category has many Product models. Product belongs to many Tag models, and Tag belongs to many Product models. Products can have multiple tags and tags to have many products by using a ProductTag model.
 
 ## Built With
 
