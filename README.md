@@ -8,7 +8,7 @@
 
 ## Description
 
-In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete routes. The database has the following tables: Category, Product, Tag and Product tag as an association table.
+In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete from the databases tables. The database has the following tables: Category, Product, Tag and Product tag as an association table. The routes were testing using Insomnia Core.
 
 ## Table of Contents
 
