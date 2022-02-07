@@ -19,6 +19,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
   - [Usage](#usage)
   - [GET routes](#get-routes)
   - [POST routes](#post-routes)
+  - [PUT routes](#put-routes)
   - [Demo](#demo)
   - [Features](#features)
   - [Built With](#built-with)
@@ -29,6 +30,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
 ## Installation
 
 - Go to the app's [repo](https://github.com/imanmansour86/E-Commerce-Back-End) in github and clone the app
+- Open the app in VS code, navigate to .env file, change the DB_USER and DB_PW based on current user configurations
 - From terminal: navigate to app's directoty and run:
 
   ```md
@@ -61,7 +63,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
 
 ## Usage
 
-Below is some screenshots demonstrating testing the routes in Insomnia
+Below are some screenshots demonstrating testing the routes in Insomnia
 
 ## GET routes
 
@@ -75,25 +77,39 @@ Below is some screenshots demonstrating testing the routes in Insomnia
 
 - Tag
 
-![Tag](./images/get_product.png)
+![Tag](./images/get_tag.png)
 
 ## POST routes
 
 - Categroy
 
-![Category](./images/post-_cat.png)
+![Category](./images/post_cat.png)
 
 - Product
 
-![Product](./images/post_produce.png)
+![Product](./images/post_product.png)
 
 - Tag
 
 ![Tag](./images/post_tag.png)
 
+## PUT routes
+
+- Categroy
+
+![Category](./images/put_category.png)
+
+- Product
+
+![Product](./images/put_product.png)
+
+- Tag
+
+![Tag](./images/put_tag.png)
+
 ## Demo
 
-- [Demo Link]()
+- [Demo Link](https://watch.screencastify.com/v/3NqAKIiVMRTFfE7wytfF)
 
 ## Features
 
