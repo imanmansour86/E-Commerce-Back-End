@@ -8,7 +8,7 @@
 
 ## Description
 
-In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete routes.
+In this app, a backend was built for an e-commerce site. Using Sequelize to interact with a MySQL database and Express.js API, we can get, update, post and delete routes. The database has the following tables: Category, Product, Tag and Product tag as an association table.
 
 ## Table of Contents
 
@@ -17,6 +17,8 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [GET routes](#get-routes)
+  - [POST routes](#post-routes)
   - [Demo](#demo)
   - [Features](#features)
   - [Built With](#built-with)
@@ -45,7 +47,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
   source schema.sql
   ```
 
-- From terminal: navigate to db folder in the app's directoty and run:
+- From terminal: navigate the app's directoty and run:
 
   ```md
   $ npm run seed
@@ -54,14 +56,40 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
 - To invoke the app from terminal, run:
 
   ```md
-  $ node index.js
+  $ npm run
   ```
 
 ## Usage
 
-Screenshot of questions prompt in command line:
+Below is some screenshots demonstrating testing the routes in Insomnia
 
-![questions]()
+## GET routes
+
+- Categroy
+
+![Category](./images/get_cat.png)
+
+- Product
+
+![Product](./images/get_product.png)
+
+- Tag
+
+![Tag](./images/get_product.png)
+
+## POST routes
+
+- Categroy
+
+![Category](./images/post-_cat.png)
+
+- Product
+
+![Product](./images/post_produce.png)
+
+- Tag
+
+![Tag](./images/post_tag.png)
 
 ## Demo
 
@@ -75,6 +103,7 @@ Screenshot of questions prompt in command line:
 - [Expressjs](https://expressjs.com/)
 - [Sequelize](https://sequelize.org/)
 - [MySQL2](https://www.npmjs.com/package/mysql2)
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Resources Used
 

@@ -37,7 +37,7 @@ router.get("/:id", async (req, res) => {
       ],
     });
     if (!singleTag) {
-      res.status(404).json({ message: "No category with that id was found" });
+      res.status(404).json({ message: "No tag with that id was found" });
       return;
     }
     res.status(200).json(singleTag);
@@ -85,10 +85,10 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (!tag) {
-      res.status(404).json({ message: "No category with that id was found" });
+      res.status(404).json({ message: "No tag with that id was found" });
       return;
     }
-    res.status(200).json(category);
+    res.status(200).json(tag);
   } catch (err) {
     res.status(500).json(err);
   }

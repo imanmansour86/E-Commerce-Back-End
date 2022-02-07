@@ -72,10 +72,7 @@ router.post("/", (req, res) => {
       res.status(200).json(product);
     })
 
-    .then((productTagIds) => product.get{{plain:true}}).then(()=> {
-      res.status(200).json(productTagIds))
-    })
-
+    .then((productTagIds) => res.status(200).json(productTagIds))
     .catch((err) => {
       console.log(err);
       res.status(400).json(err);
@@ -134,10 +131,10 @@ router.delete("/:id", (req, res) => {
       },
     });
     if (!product) {
-      res.status(404).json({ message: "No category with that id was found" });
+      res.status(404).json({ message: "No product with that id was found" });
       return;
     }
-    res.status(200).json(category);
+    res.status(200).json(product);
   } catch (err) {
     res.status(500).json(err);
   }
