@@ -58,7 +58,7 @@ In this app, a backend was built for an e-commerce site. Using Sequelize to inte
 - To invoke the app from terminal, run:
 
   ```md
-  $ npm run
+  $ node server.js
   ```
 
 ## Usage
